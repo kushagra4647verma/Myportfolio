@@ -34,48 +34,5 @@
         <br/>
         <small>Email: kushagra4647@gmail.com</small>
     </footer>
-    <script>
-    // Function to create a scroll-to-top button
-    function createScrollButton() {
-        const scrollButton = document.createElement("button");
-        scrollButton.innerText = "↑"; // Use an up arrow for the button
-        scrollButton.setAttribute("id", "scrollButton");
-        scrollButton.style.position = "fixed";
-        scrollButton.style.bottom = "20px";
-        scrollButton.style.right = "20px";
-        scrollButton.style.padding = "10px";
-        scrollButton.style.borderRadius = "50%";
-        scrollButton.style.backgroundColor = "#00aaff";
-        scrollButton.style.color = "white";
-        scrollButton.style.border = "none";
-        scrollButton.style.cursor = "pointer";
-        scrollButton.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)";
-        scrollButton.style.opacity = "0";
-        scrollButton.style.transition = "opacity 0.4s ease, transform 0.3s ease";
-
-        document.body.appendChild(scrollButton);
-
-        // Show the button when user scrolls down 200px
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 200) {
-                scrollButton.style.opacity = "1";
-                scrollButton.style.transform = "scale(1.1)";
-            } else {
-                scrollButton.style.opacity = "0";
-                scrollButton.style.transform = "scale(1)";
-            }
-        });
-
-        // Scroll to the top when button is clicked
-        scrollButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    }
-
-    // Initialize the scroll button on page load
-    window.onload = createScrollButton;
-</script>
-
-    </script>
 </body>
 </html>
